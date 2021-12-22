@@ -1,0 +1,16 @@
+section.action.block
+    .container
+        .action__content
+            .action__top
+                h2.action__title Внимание!
+                h3.action__subtitle
+                    | только сегодня&nbsp;
+                    span.date-0(data-format='dd monthFull')
+            .action__price.price
+                include price
+            .action__timer
+              include timer
+            button.action__btn.btn.ever-popup-btn
+                | Заказать
+                br
+                | со скидкой

@@ -1,0 +1,26 @@
+form.x_order_form.form(action='/submit' method='post')
+    .form__top
+        h3.form__title Внимание!
+        .form__subtitle
+            | только сегодня&nbsp;
+            span.date-0(data-format='dd monthFull')
+        .price
+            include price
+
+        label.form__input--wrap.form__input--name
+            input.form__input(placeholder='Ваше имя' type='text' name='name' autocomplete='name' required)
+        label.form__input--wrap.form__input--phone
+            input.form__input(placeholder='Ваш телефон' type='tel' name='phone' autocomplete='tel' required)
+        button.btn.form__btn
+            | Заказать
+            br
+            | со скидкой
+        .form__online
+            | Сейчас на сайте&nbsp;
+            span.form-online__count 129
+            |   человек
+
+    .form__bottom.last
+        | Осталось&nbsp;
+        span.lastpack 12
+        |  упаковок
